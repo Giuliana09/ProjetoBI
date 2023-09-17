@@ -1,0 +1,36 @@
+*ver img de etl, oltp, olap;
+*pesquisar trigger, rollback, commit;
+
+nota fiscal - dataNota, valorNota;
+pagamentos(formaPagamento) - ted, pix;
+EntregaReversa(caso de devolução);
+ConsolidaNegocio(todos os negocios do dia, recebe o relacionamento de outras tabelas: ex: entrega, pedido e pagamento);
+
+Alterar algumas tabelas para singular;
+Alterar Pedidos - status: pendente, concluído, cancelado;
+Alterar Contratos - Seguro ou Garantia;
+Alterar Sessões para Secao;
+Alterar Parcelas para FormaPagamento e incluir ted,pix;
+Alterar o relacionamento de Avaliações com Cliente para ConsolidaNegocio;
+Criar NotaFiscal;
+
+
+
+Nosso MER:
+
+Cliente - Secao = ok;
+Clientes - DadosPedidos - Pedidos = ok;
+Fornecedores - Produtos - EstoqueFornecedor = ok; 
+Pedidos - Pagamentos = ok;
+Entrega - Transportadora = ok;
+
+
+Mockaroo:
+utiliza-se a customização de listas nos atribuitos multivalorados;
+utiliza-se a custamização de listas para importar dados em portugues;
+recomenda-se cadastrar-se na ferramenta;
+é possível importar o script;
+
+
+
+
